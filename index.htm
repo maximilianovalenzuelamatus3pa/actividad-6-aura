@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7: Índice de Masa Corporal (IMC)</title>
+    <link rel="stylesheet" href="tarea7.css">
+</head>
+<body>
+    <main class="exercise">
+        <h1>Actividad 6: Índice de Masa Corporal (IMC)</h1>
+        <p>
+            En este ejercicio se calculará el IMC de una persona. Para hacerlo,
+            se utilizan dos valores: la altura en metros y el peso en kilos.
+        </p>
+        <p>La fórmula para obtener el resultado es:</p>
+        <p class="formula">IMC = peso / (altura × altura)</p>
+
+
+    
+        <div class="inputs">
+            <label for="peso-input">
+                Peso (kg)
+                <input id="peso-input" type="number" min="1" step="any" value="80">
+            </label>
+            <label for="altura-input">
+                Altura (m)
+                <input id="altura-input" type="number" min="0.1" step="any" value="1.70">
+            </label>
+        </div>
+
+        <section class="result-panel" aria-live="polite">
+            <p class="result-label">IMC calculado</p>
+            <p id="imc" class="imc-value">--</p>
+            <p id="resultado" class="result"></p>
+        </section>
+    </main>
+    <script src="tarea7.js"></script>
+</body>
+</html>
